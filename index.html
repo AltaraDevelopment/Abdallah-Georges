@@ -208,12 +208,12 @@
         const vcard = [
           'BEGIN:VCARD',
           'VERSION:3.0',
-          'N:Kopytkov;Sergei;;;',
-          'FN:Sergei Kopytkov',
+          'N:Georges;Abdallah;;;',
+          'FN:Abdallah Georges',
           'ORG:Altara Advanced Contracting L.L.C',
-          'TITLE:General Manager',
-          'TEL;TYPE=CELL:+971506501707',
-          'EMAIL:sergei.k@altaragcc.com',
+          'TITLE:Project Engineer',
+          'TEL;TYPE=CELL:+971569327732',
+          'EMAIL:abdallah.g@altaragcc.com',
           'URL:https://altaragcc.com',
           'END:VCARD', ''
         ].join('\r\n');
@@ -223,7 +223,7 @@
         const blob = new Blob([vcard], { type: 'text/vcard' });
         const blobUrl = URL.createObjectURL(blob);
         button.href = blobUrl;
-        button.setAttribute('download', 'Sergei_Kopytkov.vcf');
+        button.setAttribute('download', 'Abdallah_Georges.vcf');
         // Safari iOS may ignore the download attribute. Let Safari handle
         // the VCF blob as a document rather than invoking the share sheet.
         if (isIOS) {
